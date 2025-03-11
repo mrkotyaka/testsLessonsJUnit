@@ -23,6 +23,7 @@ public class MainTests {
     @Test
     public void testSteps() {
         System.out.println("Testing StepsCount");
+
         // given:
         int  expectedStepsCount = 6;
 
@@ -36,12 +37,13 @@ public class MainTests {
     @Test
     public void testGetX() {
         System.out.println("Testing X");
+
         // given:
-
         int  expectedX = -1;
-        // when:
 
+        // when:
         int res = robot.getX();
+
         // then:
         MatcherAssert.assertThat(res, Matchers.equalTo(expectedX));
     }
@@ -49,12 +51,13 @@ public class MainTests {
     @Test
     public void testGetY() {
         System.out.println("Testing Y");
+
         // given:
-
         int  expectedY = 1;
-        // when:
 
+        // when:
         int res = robot.getY();
+
         // then:
         MatcherAssert.assertThat(res, Matchers.equalTo(expectedY));
     }
@@ -69,6 +72,7 @@ public class MainTests {
 
         // when:
         int res = robot.getY();
+
         // then:
         MatcherAssert.assertThat(res, Matchers.equalTo(expectedY));
     }
@@ -83,6 +87,7 @@ public class MainTests {
 
         // when:
         int res = robot.getX();
+
         // then:
         MatcherAssert.assertThat(res, Matchers.equalTo(expectedX));
     }
